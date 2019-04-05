@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [MainWindow.xaml](./CS/GridMVVMSelection/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/GridMVVMSelection/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/GridMVVMSelection/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/GridMVVMSelection/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/GridMVVMSelection/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/GridMVVMSelection/MainWindow.xaml.vb))
 * [ViewModel.cs](./CS/GridMVVMSelection/ViewModel.cs) (VB: [ViewModel.vb](./VB/GridMVVMSelection/ViewModel.vb))
 <!-- default file list end -->
 # MVVM - How to bind the GridControl's selected rows to a property in a ViewModel
