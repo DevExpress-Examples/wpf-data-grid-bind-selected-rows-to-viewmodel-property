@@ -1,39 +1,25 @@
 <Window x:Class="WPFGridMVVMSelection.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
-        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <dxg:GridControl ItemsSource="{Binding Source}" AutoGenerateColumns="AddNew" SelectionMode="Row" SelectedItems="{Binding Selection}" >
+        xmlns:local="clr-namespace:WPFGridMVVMSelection"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:CustomersViewModel/>
+    </Window.DataContext>
+    <DockPanel>
+        <Button Command="{Binding DeleteSelectedRowsCommand}" Content="Delete Selected Rows" DockPanel.Dock="Bottom"/>
+        <dxg:GridControl Name="grid"
+                         AutoGenerateColumns="AddNew"
+                         ItemsSource="{Binding Customers}" 
+                         SelectionMode="Row" 
+                         SelectedItems="{Binding Selection}">
             <dxg:GridControl.View>
-                <dxg:TableView NavigationStyle="Row" />
+                <dxg:TableView Name="view"/>
             </dxg:GridControl.View>
         </dxg:GridControl>
-        <ListView SelectionMode="Multiple" Grid.Column="1" ItemsSource="{Binding Source}"
-                  dx:SelectionAttachedBehavior.SelectedItemsSource="{Binding Selection}" />
-        <dxg:GridControl Grid.Column="2" ItemsSource="{Binding Source}" AutoGenerateColumns="AddNew" SelectionMode="Row" SelectedItems="{Binding Selection}"> 
-            <dxg:GridControl.View>
-                <dxg:TableView NavigationStyle="Row" />
-            </dxg:GridControl.View>
-        </dxg:GridControl>
-        <dxg:GridControl Grid.Column="3" ItemsSource="{Binding Source}" AutoGenerateColumns="AddNew" SelectionMode="Row" SelectedItems="{Binding Selection}">
-            <dxg:GridControl.View>
-                <dxg:CardView NavigationStyle="Row" />
-            </dxg:GridControl.View>
-        </dxg:GridControl>
-        <Button Grid.Row="1" Grid.ColumnSpan="2" Content="Select Odd Rows" Command="{Binding SelectOddRowsCommand}"/>
-        <Button Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Content="Delete Selected Rows" Command="{Binding DeleteSelectedRowsCommand}" />
-    </Grid>
+    </DockPanel>
 </Window>
