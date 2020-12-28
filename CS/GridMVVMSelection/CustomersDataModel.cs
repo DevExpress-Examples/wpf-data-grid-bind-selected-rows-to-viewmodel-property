@@ -5,10 +5,26 @@ using System.Collections.ObjectModel;
 
 namespace WPFGridMVVMSelection {
     public class Customer : BindableBase {
-        public string Name { get; set; }
-        public string City { get; set; }
-        public int Visits { get; set; }
-        public DateTime? Birthday { get; set; }
+        public string Name
+        {
+            get { return GetValue<string>(); }
+            set { SetValue(value); }
+        }
+        public string City
+        {
+            get { return GetValue<string>(); }
+            set { SetValue(value); }
+        }
+        public int Visits
+        {
+            get { return GetValue<int>(); }
+            set { SetValue(value); }
+        }
+        public DateTime? Birthday
+        {
+            get { return GetValue<DateTime?>(); }
+            set { SetValue(value); }
+        }
     }
     public class CustomersDataModel {
         public static IList<Customer> GetCustomers() {
