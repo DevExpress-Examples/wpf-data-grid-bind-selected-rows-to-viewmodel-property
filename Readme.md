@@ -9,7 +9,7 @@
 This example shows how to synchronize the [GridControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl)‘s selection with an item collection in a ViewModel. The example:
 
 1) Binds the GridControl‘s [SelectedItems](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.DataControlBase.SelectedItems) property to the **Selection** collection defined in a ViewModel.
-2) Adds a button that deletes selected rows.
+2) Adds a button that deletes the selected rows.
 
 ![](https://docs.devexpress.com/WPF/images/WPF_Grid_BindToSelected.png)
 
