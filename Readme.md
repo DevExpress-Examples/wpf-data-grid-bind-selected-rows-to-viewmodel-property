@@ -3,18 +3,36 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E3139)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
+
+# WPF Data Grid - Bind Selected Rows to a ViewModel Property
+
+This example shows how to synchronize the [GridControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl)‘s selection with an item collection in a ViewModel. The example:
+
+1) Binds the GridControl‘s [SelectedItems](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.DataControlBase.SelectedItems) property to the **Selection** collection defined in a ViewModel.
+2) Adds a button that deletes selected rows.
+
+![](https://docs.devexpress.com/WPF/images/WPF_Grid_BindToSelected.png)
+
 <!-- default file list -->
-*Files to look at*:
+
+## Files to Look At
 
 * [MainWindow.xaml](./CS/GridMVVMSelection/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/GridMVVMSelection/MainWindow.xaml))
-* [CustomersDataModel.cs](./CS/GridMVVMSelection/CustomersDataModel.cs) (VB: [CustomersDataModel.vb](./VB/GridMVVMSelection/CustomersDataModel.vb))
 * [CustomersViewModel.cs](./CS/GridMVVMSelection/CustomersViewModel.cs) (VB: [CustomersViewModel.vb](./VB/GridMVVMSelection/CustomersViewModel.vb))
+* [CustomersDataModel.cs](./CS/GridMVVMSelection/CustomersDataModel.cs) (VB: [CustomersDataModel.vb](./VB/GridMVVMSelection/CustomersDataModel.vb))
+
 <!-- default file list end -->
-# MVVM - How to bind the GridControl's selected rows to a property in a ViewModel
 
+## Documentation
 
-<p>This example demonstrates how to bind the GridControl's selected rows to a property in a ViewModel in a MVVM-based application.</p>
+- [Binding to a Collection of Selected Items](https://docs.devexpress.com/WPF/10125/controls-and-libraries/data-grid/examples/mvvm-enhancements/binding-to-a-collection-of-selected-items)
+- [DataControlBase.SelectedItems](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.DataControlBase.SelectedItems)
+- [Multiple Row Selection](https://docs.devexpress.com/WPF/7359/controls-and-libraries/data-grid/focus-navigation-selection/multiple-row-selection)
+- [Focus, Navigation, Selection](https://docs.devexpress.com/WPF/6118/controls-and-libraries/data-grid/focus-navigation-selection)
+- [WPF Data Grid: MVVM Support](https://docs.devexpress.com/WPF/10122/controls-and-libraries/data-grid/mvvm-support)
 
-<br/>
+## More Examples
 
-
+- [WPF Data Grid - Handle Row Double-clicks in a MVVM Application](https://github.com/DevExpress-Examples/how-to-handle-a-double-click-on-a-grid-row-in-a-mvvm-application-e2458)
+- [How to Bind the ChartControl to the GridControl's VisibleItems Collection](https://github.com/DevExpress-Examples/how-to-bind-the-chartcontrol-to-the-gridcontrol-visibleitems-collection)
+- [WPF Data Grid - How to Change the Appearance of Selected Cells](https://github.com/DevExpress-Examples/how-to-change-selected-cells-appearance-when-gridcontrols-multi-cell-selection-is-enabled-e2568)
