@@ -38,7 +38,7 @@ This example shows how to synchronize the [GridControl](https://docs.devexpress.
 - [How to Bind the ChartControl to the GridControl's VisibleItems Collection](https://github.com/DevExpress-Examples/how-to-bind-the-chartcontrol-to-the-gridcontrol-visibleitems-collection)
 - [WPF Data Grid - How to Change the Appearance of Selected Cells](https://github.com/DevExpress-Examples/how-to-change-selected-cells-appearance-when-gridcontrols-multi-cell-selection-is-enabled-e2568)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-bind-selected-rows-to-viewmodel-property&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-bind-selected-rows-to-viewmodel-property&~~~was_helpful=no)
 
